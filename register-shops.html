@@ -17,7 +17,20 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+    <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script>
+$(document).ready(function(){
+  $("#store").click(function(){
+    $("#message").toggle();
+  });
+});
+    </script>
+<style type="text/css">
+  .hidden {
+     display:none;
+}
+</style>
 </head>
 
 <body id="page-top">
@@ -227,7 +240,38 @@
          <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Title</h1>
+          <h1 class="h3 mb-4 text-gray-800">Add New Shops</h1>
+
+          <form>
+            <div id="message" class="alert alert-success hidden" >
+  <strong>Success!</strong> Shop is added. <span ><a style="text-decoration: none" href="shops.html">Check here!</a></span>
+</div>
+
+  <div class="form-group">
+    <label for="shop-name">Shop Name</label>
+    <input type="text" class="form-control" id="shop-name" placeholder="">
+   
+  </div>
+   <div class="form-group">
+    <label for="shop-staff">Staff In Charge</label>
+    <input type="text" class="form-control" id="shop-staff" placeholder="">
+   
+  </div>
+ <div class="form-group">
+    <label for="shop-phone">Phone</label>
+    <input type="text" class="form-control" id="shop-phone" placeholder="">
+   
+  </div>
+   <div class="form-group">
+    <label for="shop-address">Shop Address</label>
+    <input type="text" class="form-control" id="shop-address" placeholder="">
+   
+  </div>
+    <small id="info" class="form-text text-muted text-warning">All your goods are billed and, returned goods are delivered to this address.</small>
+    <hr>
+
+</form>
+  <button id="store" class="btn btn-primary">Submit</button>
 
         </div>
         <!-- /.container-fluid -->
@@ -276,8 +320,7 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

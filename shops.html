@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!----> 
 <html lang="en">
 
 <head>
@@ -8,16 +10,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <title>LOGISTICS APP</title>
 
-  <title>Logistics App - Demo Site</title>
-
-  <!-- Custom fonts for this template-->
+  <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <!-- Custom styles for this template-->
+  <!-- Custom styles for this template -->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+  <style type="text/css">
+.btn {
+    margin-bottom: 5px; 
+
+}
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+ 
+<script type="text/javascript" src="DataTables/datatables.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -227,8 +240,114 @@
          <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Title</h1>
-
+          <h1 class="h3 mb-4 text-gray-800">Registered Shops</h1>
+              <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"></h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                          <tr>
+                      <th>ID</th>
+                      <th>Staff Name</th>
+                       <th>Shop Name</th>
+                      <th>Phone</th>
+                      <th>Address</th>
+                      <th>Edit/Delete</th>
+                    </tr>
+                  </thead>
+                  
+                  </tfoot>
+                 <tbody>
+                    <tr>
+                      <td>A-100</td>
+                      <td>一子  黒山</td>
+                      <td style="max-width: 300px">Base Shop</td>
+                      <td>6223434344</td>
+                      <td style="max-width: 300px">〒171-0041 東京都豊島区千川３０</td>
+                      <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>A-101</td>
+                      <td>石田一郎</td>
+                      <td>楽天</td>
+                      <td>34645656457</td>
+                      <td style="max-width: 300px">383-1244, Raibetsu, SHokkaido</td>
+                      <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>A-102</td>
+                      <td>中村 秋</td>
+                      <td>Nakamura Tradings</td>
+                      <td>65645646</td>
+                      <td style="max-width: 300px">〒173-0035 東京都板橋区大谷口２丁目１１−8</td>
+                      <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>A-103</td>
+                      <td>Yamada Shizuka</td>
+                      <td>Singapore Gift Shop</td>
+                      <td>6434342442</td>
+                      <td style="max-width: 300px">〒208-0035 東京都武蔵村山市中原１丁目７−1</td>
+                      <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                     <td>A-104</td>
+                      <td>なかむら　あべ</td>
+                      <td>Chinese Toys Supply</td>
+                      <td>384657657</td>
+                      <td style="max-width: 300px">〒355-0815 埼玉県比企郡滑川町月の輪１丁目</td>
+                      <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>A-105</td>
+                      <td>David Muller</td>
+                      <td>My Tokyo Anime Shop</td>
+                      <td>37432426</td>
+                      <td style="max-width: 300px">〒355-0167 埼玉県比企郡吉見町大字田甲</td>
+                      <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                     <td>A-106</td>
+                      <td>Jacques Delcroix</td>
+                      <td>Winter Branding</td>
+                      <td>615325234</td>
+                      <td style="max-width: 300px">〒367-0244 埼玉県児玉郡神川町大字八日市739-2</td>
+                      <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>A-107</td>
+                      <td>Benoît Bocuse</td>
+                      <td style="max-width: 100px">French Wine Tasting and Delivery Services</td>
+                      <td>4523523524</td>
+                      <td style="max-width: 300px">739-2 Yokaichi, Kamikawa, Kodama District, Saitama 367-0244, Japan</td>
+                      <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>A-108</td>
+                      <td>Krishna Rao</td>
+                      <td>Indian Spices</td>
+                      <td>64523423</td>
+                      <td style="max-width: 300px">110 Sekiguchi, Kamikawa, Kodama District, Saitama 367-0246, Japan</td>
+                      <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td>A-109</td>
+                      <td>Xi Ping</td>
+                      <td>Star Clothing</td>
+                      <td>633463424</td>
+                      <td style="max-width: 300px">〒367-0246 埼玉県児玉郡神川町大字関口110</td>
+                      <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+                    </tr>
+      
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- /.container-fluid -->
 
@@ -286,11 +405,12 @@
   <script src="js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="js/demo/datatables-demo.js"></script>
+
 
 </body>
 
