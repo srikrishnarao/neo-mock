@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!----> 
 <html lang="en">
 
 <head>
@@ -8,16 +10,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <title>LOGISTICS APP</title>
 
-  <title>Logistics App - Demo Site</title>
-
-  <!-- Custom fonts for this template-->
+  <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <!-- Custom styles for this template-->
+  <!-- Custom styles for this template -->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+  <style type="text/css">
+.btn {
+    margin-bottom: 5px; 
+
+}
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+ 
+<script type="text/javascript" src="DataTables/datatables.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -102,8 +115,8 @@
         <div id="payments" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="usage-status.html">利用状況</a>
-            <a class="collapse-item" href="payments.html">料金のお支払い/請求書発行</a>
-            <a class="collapse-item active" href="payments-history.html">お支払い履歴/受領書発行</a>
+            <a class="collapse-item" href="payments.html">料金のお支払い/請求書</a>
+            <a class="collapse-item active" href="payments-history.html">お支払い履歴/受領書</a>
           </div>
         </div>
       </li>
@@ -121,7 +134,7 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item ">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-users"></i>
           <span>管理</span>
@@ -227,8 +240,104 @@
          <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Title</h1>
-
+          <h1 class="h3 mb-4 text-gray-800">料金のお支払い履歴</h1>
+              <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary"></h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                          <tr>
+                      <th>お支払い日</th>
+                      <th>ご利用月</th>
+                       <th>お支払い金額 「円」</th>
+                      <th>明細</th>
+                      <th>受領書</th>
+                    </tr>
+                  </thead>
+                  
+                  </tfoot>
+                 <tbody>
+                    <tr>
+                      <td>2019-10-03</td>
+                      <td>2019年11月</td>
+                      <td>320000</td>
+                      <td>一子  黒山</td>
+                      <td><button class="btn btn-primary"><a style="text-decoration: none; color:white" href="reciept.pdf">受領書</a></button>
+                    </tr>
+                    <tr>
+                      <td>2019-10-02</td>
+                      <td>2019年11月</td>
+                      <td>170000</td>
+                      <td>34645656457</td>
+                       <td><button class="btn btn-primary"><a style="text-decoration: none; color:white" href="reciept.pdf">受領書</a></button>
+                    </tr>
+                    <tr>
+                      <td>2019-10-07</td>
+                      <td>2019年11月</td>
+                      <td>86000</td>
+                      <td>65645646</td>
+                      <td><button class="btn btn-primary"><a style="text-decoration: none; color:white" href="reciept.pdf">受領書</a></button>
+                    </tr>
+                    <tr>
+                      <td>2019-10-03</td>
+                      <td>2019年11月</td>
+                      <td>50000</td>
+                      <td>6434342442</td>
+                      <td><button class="btn btn-primary"><a style="text-decoration: none; color:white" href="reciept.pdf">受領書</a></button>
+                    </tr>
+                    <tr>
+                     <td>2018-10-03</td>
+                      <td>2019年11月</td>
+                      <td>900000</td>
+                      <td>384657657</td>
+                      <td><button class="btn btn-primary"><a style="text-decoration: none; color:white" href="reciept.pdf">受領書</a></button>
+                    </tr>
+                    <tr>
+                      <td>2018-10-05</td>
+                      <td>2019年12月</td>
+                      <td>92000</td>
+                      <td>sa</td>
+                      <td><button class="btn btn-primary"><a style="text-decoration: none; color:white" href="reciept.pdf">受領書</a></button>
+                    </tr>
+                    <tr>
+                     <td>2018-10-03</td>
+                      <td>2019年12月</td>
+                      <td>190000</td>
+                      <td>615325234</td>
+                      <td><button class="btn btn-primary"><a style="text-decoration: none; color:white" href="reciept.pdf">受領書</a></button>
+                    </tr>
+                    <tr>
+                      <td>2018-10-09</td>
+                      <td>2019年12月</td>
+                      <td>880000</td>
+                      <td>4523523524</td>
+                     
+                      <td><button class="btn btn-primary"><a style="text-decoration: none; color:white" href="reciept.pdf">受領書</a></button>
+                    </tr>
+                    <tr>
+                      <td>2017-10-09</td>
+                      <td>2019年09月</td>
+                      <td>95000</td>
+                      <td>一子  黒山</td>
+                      <td><button class="btn btn-primary"><a style="text-decoration: none; color:white" href="reciept.pdf">受領書</a></button>
+                    </tr>
+                    <tr>
+                      <td>2017-10-09</td>
+                      <td>2019年11月</td>
+                      <td>90000</td>
+                      <td>633463424</td>
+                               <td><button class="btn btn-primary"><a style="text-decoration: none; color:white" href="reciept.pdf">受領書</a></button>
+                    </tr>
+      
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- /.container-fluid -->
 
@@ -286,11 +395,12 @@
   <script src="js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="js/demo/datatables-demo.js"></script>
+
 
 </body>
 

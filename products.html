@@ -227,11 +227,94 @@
          <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Title</h1>
+          <h1 class="h3 mb-4 text-gray-800">商品登録</h1>
+            <div class="row">
+
+    <div class="col-md-6 row-fluid">
+      <div class="contact-form span6" style="padding-right:20px; border-right: 1px solid #ccc;">
+        <div class="form-group">
+          <label class="control-label col-sm-4" for="name">商品名</label>
+          <div class="col-sm-10">          
+          <input type="text" class="form-control" id="name" placeholder="" name="name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-4" for="maker-id">メーカ ID</label>
+          <div class="col-sm-10">          
+          <input type="text" class="form-control" id="maker-id" placeholder="" name="maker-id">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-4" for="jan">JAN コード</label>
+          <div class="col-sm-10">
+          <input type="" class="form-control" id="jan" placeholder="" name="jan">
+          </div>
+        </div>
+         <div class="form-group">
+          <label class="control-label col-sm-4" for="invoice-name">インボイス名</label>
+          <div class="col-sm-10">
+          <input type="text" class="form-control" id="invoice-name" placeholder="" name="invoice-name">
+          </div>
+        </div>
+        <div class="form-group">        
+          <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-primary">登録</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-6">
+      <div class="contact-form span6">
+        <div class="form-group">
+          <button class="btn btn-primary" style="min-width: 150px;">CSV 一括登録</button>
+        </div>
+<br>
+<br>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="min-width: 150px;">API 一括登録</button>
+          
+        </div>
+
+      </div>
+  </div>
+
+
+
+  <!-- modal--->
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><span><a style="text-decoration: none; " href="https://thebase.in/" target="_blank">BASE API</a></span> 一括登録</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        BASE API　商品登録確認よろしいでしょうか
+      </div>
+      <div class="modal-footer">
+        <form action="products-confirm-list.html">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">キャンセル</button>
+        <button type="submit" class="btn btn-primary">確認</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- end of modal--->
 
         </div>
         <!-- /.container-fluid -->
-
+</div>
       </div>
       <!-- End of Main Content -->
 
